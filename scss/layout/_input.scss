@@ -1,0 +1,45 @@
+.input {
+  height: 50px;
+  background: rgb(238, 238, 238);
+  > div {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &-form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .input-select {
+      @include input-style {
+        width: 10%;
+        margin-right: 2.5%;
+        background: #fff;
+      }
+    }
+
+    .input-desc {
+      @include input-style {
+        width: 65%;
+        margin-right: 2.5%;
+        font-size: 1rem;
+      }
+    }
+
+    .input-value {
+      @include input-style {
+        width: 17.5%;
+        margin-right: 2.5%;
+        font-size: 1rem;
+      }
+    }
+
+    .input-submit {
+      @include input-style {
+        width: 10%;
+      }
+    }
+  }
+}
