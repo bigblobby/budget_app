@@ -16,10 +16,12 @@
     h3 {
       margin-bottom: 1em;
       font-weight: 300;
+      text-align: center;
     }
 
     h1 {
       font-weight: 300;
+      text-align: center;
     }
   }
 
@@ -28,13 +30,13 @@
 
     .income {
       @include value-box {
-        background-color: rgb(25, 201, 83);
+        background-color: $color-income;
         margin-bottom: 0.5em;
       }
     }
     .expenses {
       @include value-box {
-        background-color: rgb(211, 50, 38);
+        background-color: $color-expenses;
       }
     }
   }

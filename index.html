@@ -14,33 +14,47 @@
   <div class="display">
     <div class="display-total">
       <h3>Available Budget</h3>
-      <h1>£1456.83</h1>
+      <h1 id="total">£0.00</h1>
     </div>
     <div class="display-value">
       <div class="income">
         <span>INCOME</span>
-        <span class="income-value">0.00</span>
+        <span id="display-income" class="income-value">0.00</span>
       </div>
       <div class="expenses">
         <span>EXPENSES</span>
-        <span class="expenses-value">0.00</span>
+        <span id="display-expenses" class="expenses-value">0.00</span>
       </div>
     </div>
   </div>
 
   <div class="input">
     <div>
-      <form class="input-form" action="">
-        <select class="input-select" name="" id="">
+      <form id="form-input" class="input-form" action="">
+        <select id="select-input" class="input-select" name="">
           <option value="income">+</option>
           <option value="expense">-</option>
         </select>
         <input class="input-desc" type="text" placeholder="Description...">
-        <input class="input-value" type="number" placeholder="Value...">
+        <input id="value-input" class="input-value" type="number" placeholder="Value..." step="0.01">
         <button class="input-submit" type="submit">Enter</button>
       </form>
     </div>
   </div>
+
+  <div class="output">
+    <div class="output-income">
+      <h2>Income</h2>
+      <ul id="income-output"></ul>
+    </div>
+    <div class="output-expenses">
+      <h2>Expenses</h2>
+      <ul id="expenses-output"></ul>
+    </div>
+  </div>
 </body>
+
+
+<script src="dist/js/app.js"></script>
 
 </html>
