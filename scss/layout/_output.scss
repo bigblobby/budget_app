@@ -3,21 +3,13 @@
   min-height: 600px;
 
   &-income {
-    flex: 1 50%;
-    padding: 2em;
-
-    h2 {
-      text-align: center;
+    @include ul-style {
       color: $color-income;
     }
   }
 
   &-expenses {
-    flex: 1 50%;
-    padding: 2em;
-
-    h2 {
-      text-align: center;
+    @include ul-style {
       color: $color-expenses;
     }
   }
@@ -37,6 +29,16 @@
 
       span:last-of-type {
         margin-left: auto;
+      }
+
+      button {
+        font-size: 1rem;
+        background-color: rgb(223, 223, 223);
+        color: #fff;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
       }
     }
   }
