@@ -5,14 +5,39 @@
   &-income {
     flex: 1 50%;
     padding: 2em;
-    text-align: center;
-    color: $color-income;
+
+    h2 {
+      text-align: center;
+      color: $color-income;
+    }
   }
 
   &-expenses {
     flex: 1 50%;
     padding: 2em;
-    text-align: center;
-    color: $color-expenses;
+
+    h2 {
+      text-align: center;
+      color: $color-expenses;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      padding: 0.5em 0;
+      border-bottom: 1px solid rgb(207, 207, 207);
+
+      &:first-of-type {
+        border-top: 1px solid rgb(207, 207, 207);
+      }
+
+      span:last-of-type {
+        margin-left: auto;
+      }
+    }
   }
 }

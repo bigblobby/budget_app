@@ -5,7 +5,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #4b4b4b; }
 
 .display {
   height: 40vh;
@@ -91,11 +92,24 @@ body {
   min-height: 600px; }
   .output-income {
     flex: 1 50%;
-    padding: 2em;
-    text-align: center;
-    color: #19c953; }
+    padding: 2em; }
+    .output-income h2 {
+      text-align: center;
+      color: #19c953; }
   .output-expenses {
     flex: 1 50%;
-    padding: 2em;
-    text-align: center;
-    color: #d33226; }
+    padding: 2em; }
+    .output-expenses h2 {
+      text-align: center;
+      color: #d33226; }
+  .output ul {
+    padding: 0;
+    list-style: none; }
+    .output ul li {
+      display: flex;
+      padding: 0.5em 0;
+      border-bottom: 1px solid #cfcfcf; }
+      .output ul li:first-of-type {
+        border-top: 1px solid #cfcfcf; }
+      .output ul li span:last-of-type {
+        margin-left: auto; }
