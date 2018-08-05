@@ -14,7 +14,7 @@
 
     .input-select {
       @include input-style {
-        width: 10%;
+        width: 15%;
         margin-right: 2.5%;
         background: #fff;
       }
@@ -22,7 +22,7 @@
 
     .input-desc {
       @include input-style {
-        width: 65%;
+        width: 60%;
         margin-right: 2.5%;
         padding-left: 0.5em;
         font-size: 0.8rem;

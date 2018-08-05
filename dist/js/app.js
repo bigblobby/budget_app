@@ -90,7 +90,7 @@ function addReason(info, ul, money) {
   ul.append(li);
 }
 
-function clearInput(desc, value) {
+function clearInput() {
   descInput.value = '';
   valueInput.value = '';
 }
