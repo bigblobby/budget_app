@@ -9,6 +9,10 @@
   background-position: center;
   background-size: cover;
 
+  @include mq("phone") {
+    height: 50vh;
+  }
+
   &-total {
     margin-bottom: 2em;
     color: #fff;
@@ -25,6 +29,14 @@
 
   &-value {
     width: 40%;
+
+    @include mq("tab") {
+      width: 70%;
+    }
+
+    @include mq("phone") {
+      width: 90%;
+    }
 
     .income {
       @include value-box {

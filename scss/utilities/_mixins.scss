@@ -28,8 +28,21 @@
   flex: 1 50%;
   padding: 2em;
 
+  @include mq("phone") {
+    flex: 1 100%;
+  }
   h2 {
     text-align: center;
+    @content;
+  }
+}
+
+// Media queries
+
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break);
+
+  @media (max-width: $value) {
     @content;
   }
 }

@@ -1,10 +1,23 @@
 .input {
   height: 50px;
   background: rgb(238, 238, 238);
+
+  @include mq("phone") {
+    height: 80px;
+  }
+
   > div {
     width: 50%;
     height: 100%;
     margin: 0 auto;
+
+    @include mq("tab") {
+      width: 70%;
+    }
+
+    @include mq("phone") {
+      width: 95%;
+    }
   }
 
   &-form {
@@ -12,11 +25,20 @@
     align-items: center;
     height: 100%;
 
+    @include mq("phone") {
+      flex-wrap: wrap;
+      padding-top: 10px;
+      height: 60%;
+    }
+
     .input-select {
       @include input-style {
         width: 15%;
         margin-right: 2.5%;
         background: #fff;
+      }
+      @include mq("phone") {
+        width: 17.5%;
       }
     }
 
@@ -27,6 +49,9 @@
         padding-left: 0.5em;
         font-size: 0.8rem;
       }
+      @include mq("phone") {
+        width: 60%;
+      }
     }
 
     .input-value {
@@ -36,11 +61,19 @@
         padding-left: 0.5em;
         font-size: 0.8rem;
       }
+      @include mq("phone") {
+        margin-right: 0%;
+        width: 17.5%;
+      }
     }
 
     .input-submit {
       @include input-style {
         width: 10%;
+      }
+
+      @include mq("phone") {
+        width: 100%;
       }
     }
   }

@@ -18,6 +18,9 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header.jpg);
   background-position: center;
   background-size: cover; }
+  @media (max-width: 600px) {
+    .display {
+      height: 50vh; } }
   .display-total {
     margin-bottom: 2em;
     color: #fff; }
@@ -28,6 +31,12 @@ body {
       text-align: center; }
   .display-value {
     width: 40%; }
+    @media (max-width: 1025px) {
+      .display-value {
+        width: 70%; } }
+    @media (max-width: 600px) {
+      .display-value {
+        width: 90%; } }
     .display-value .income {
       background-color: #000;
       padding: 1em;
@@ -51,14 +60,28 @@ body {
 .input {
   height: 50px;
   background: #eeeeee; }
+  @media (max-width: 600px) {
+    .input {
+      height: 80px; } }
   .input > div {
     width: 50%;
     height: 100%;
     margin: 0 auto; }
+    @media (max-width: 1025px) {
+      .input > div {
+        width: 70%; } }
+    @media (max-width: 600px) {
+      .input > div {
+        width: 95%; } }
   .input-form {
     display: flex;
     align-items: center;
     height: 100%; }
+    @media (max-width: 600px) {
+      .input-form {
+        flex-wrap: wrap;
+        padding-top: 10px;
+        height: 60%; } }
     .input-form .input-select {
       border: 1px solid #b6b5b5;
       border-radius: 5px;
@@ -66,6 +89,9 @@ body {
       width: 15%;
       margin-right: 2.5%;
       background: #fff; }
+      @media (max-width: 600px) {
+        .input-form .input-select {
+          width: 17.5%; } }
     .input-form .input-desc {
       border: 1px solid #b6b5b5;
       border-radius: 5px;
@@ -74,6 +100,9 @@ body {
       margin-right: 2.5%;
       padding-left: 0.5em;
       font-size: 0.8rem; }
+      @media (max-width: 600px) {
+        .input-form .input-desc {
+          width: 60%; } }
     .input-form .input-value {
       border: 1px solid #b6b5b5;
       border-radius: 5px;
@@ -82,24 +111,38 @@ body {
       margin-right: 2.5%;
       padding-left: 0.5em;
       font-size: 0.8rem; }
+      @media (max-width: 600px) {
+        .input-form .input-value {
+          margin-right: 0%;
+          width: 17.5%; } }
     .input-form .input-submit {
       border: 1px solid #b6b5b5;
       border-radius: 5px;
       height: 70%;
       width: 10%; }
+      @media (max-width: 600px) {
+        .input-form .input-submit {
+          width: 100%; } }
 
 .output {
   display: flex;
+  flex-wrap: wrap;
   min-height: 400px; }
   .output-income {
     flex: 1 50%;
     padding: 2em; }
+    @media (max-width: 600px) {
+      .output-income {
+        flex: 1 100%; } }
     .output-income h2 {
       text-align: center;
       color: #19c953; }
   .output-expenses {
     flex: 1 50%;
     padding: 2em; }
+    @media (max-width: 600px) {
+      .output-expenses {
+        flex: 1 100%; } }
     .output-expenses h2 {
       text-align: center;
       color: #d33226; }

@@ -1,5 +1,6 @@
 .output {
   display: flex;
+  flex-wrap: wrap;
   min-height: 400px;
 
   &-income {
