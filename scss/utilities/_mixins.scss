@@ -20,6 +20,10 @@
   border-radius: 5px;
   height: 70%;
   @content;
+
+  @include mq("phone") {
+    height: 100%;
+  }
 }
 
 // Output Section
